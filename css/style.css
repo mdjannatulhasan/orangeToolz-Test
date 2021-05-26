@@ -45,6 +45,7 @@
     background-color: #133159;
     width: 89px;
     transition: .6s;
+    font-family: Poppins;
 }
 .sidenav{
     background-color: transparent;
@@ -59,11 +60,17 @@
     width: 235px;
     transition: .6s;
 }
+#sideNavbar.expanded img{
+    margin: 10px 10px 0 40px;
+}
 #sideNavbar img{
     margin: 10px 25px 0 25px;
 }
+#sideNavbar .logoTxt{
+    font-size: 26px;
+    color: #ffffff;
+}
 .sidenav li a{
-    font-family: Poppins;
     padding: 0 13px;
     margin: 10px 20px;
     border-radius: 10px;
@@ -72,7 +79,6 @@
     font-weight: 300;
 }
 .expanded li a{
-    font-family: Poppins;
     padding: 0 15px;
     margin: 10px 20px;
     border-radius: 10px;
