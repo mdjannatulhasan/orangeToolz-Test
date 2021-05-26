@@ -1,0 +1,67 @@
+.mike {
+    background: url('../images/icons/hand-mike.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.search {
+    background: url('../images/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.calender {
+    background: url('../images/icons/calender.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.bolt {
+    background: url('../images/icons/bolt.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.chart {
+    background: url('../images/icons/chart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.user {
+    background: url('../images/icons/Vectoruser.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.sidenav li>a{
+    font-family: Poppins;
+    padding: 0 15px;
+    margin: 0 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+}
+.sidenav li>a>i,.sidenav li>a>i.material-icons{
+    color: #ffffff !important;
+    margin: 0 10px 0 0;
+}
+.sidenav{
+    background-color: #133159;
+    position: unset;
+}
+
+.sidenav li.active{
+    background-color:transparent !important;
+}
+.sidenav li.active a{
+    background-color:#3c7ef3 !important;
+    box-shadow: 0px 30px 12px -20px rgba(15, 36, 64, 0.5);
+    
+}
+.sidenav-overlay {
+    position: inherit;
+    top:unset;
+    height: unset;
+}
