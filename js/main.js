@@ -14,13 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   $(document).ready(function(){
-    $('ul li').click(function(){
+    $('ul li:not(:last)').click(function(){
       $('li').removeClass("active");
       $(this).addClass("active");
   });
   });
   $(document).ready(function(){
-	$('#iconBurger').click(function(){
-		$(this).toggleClass('open');
+	$('#burgerMenu').click(function(){
+		$('ul').toggleClass('expanded');
+		$('ul li span').delay(1000).toggleClass('nav-link');
 	});
 });
