@@ -46,6 +46,7 @@
     width: 89px;
     transition: .6s;
     font-family: Poppins;
+    float: left;
 }
 .sidenav{
     background-color: transparent;
@@ -54,7 +55,6 @@
     width: 100%;
     box-shadow: none;
     border:none;
-    /* width: 258px; */
 }
 .expanded{
     width: 235px;
@@ -117,4 +117,15 @@
 }
 #burgerMenu{
     padding-top: 20px;
+}
+
+.main{
+    width: calc(100% - 89px);
+    float: left;
+    transition: .6s;
+}
+.smaller{
+    width: calc(100% - 235px);
+    float: left;
+    transition: .6s;
 }

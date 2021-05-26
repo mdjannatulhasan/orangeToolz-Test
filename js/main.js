@@ -23,5 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	$('#burgerMenu').click(function(){
 		$('#sideNavbar').toggleClass('expanded');
 		$('#sideNavbar span').toggleClass('nav-link');
+		$('#mainBody').toggleClass('smaller');
 	});
 });
