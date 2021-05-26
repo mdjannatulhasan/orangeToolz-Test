@@ -41,6 +41,9 @@
     background-position: center;
     display: block;
 }
+*{
+    font-family: 'Poppins';
+}
 .sideNavbar{
     background-color: #133159;
     width: 89px;
@@ -128,4 +131,34 @@
     width: calc(100% - 235px);
     float: left;
     transition: .6s;
+}
+.topNav{
+    background: #133159;
+    height: 64px;
+}
+.searchBox{
+    position: relative;
+}
+.main .material-icons{
+    position: absolute;
+    right:0;
+    z-index: 99;
+    top:19px;
+}
+#icon_prefix{
+    position: absolute;
+    top: 14px;
+    background: #E5E8EF;
+    box-shadow: inset -4px 0px 2px #FFFFFF, inset 4px 4px 2px rgba(8, 20, 36, 0.1) !important;
+    border-radius: 10px;
+    border-bottom: none;
+}
+input[type=text]:not(.browser-default){
+    height: 2.3rem;
+    padding-left: 20px;
+    width: 95%;
+}
+input::placeholder{
+    color: #546376;
+    font-size: 14px;
 }
