@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   $(document).ready(function(){
 	$('#burgerMenu').click(function(){
-		$('ul').toggleClass('expanded');
-		$('ul li span').delay(1000).toggleClass('nav-link');
+		$('#sideNavbar').toggleClass('expanded');
+		$('#sideNavbar span').toggleClass('nav-link');
 	});
 });
