@@ -19,4 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
       $(this).addClass("active");
   });
   });
-  
+  $(document).ready(function(){
+	$('#iconBurger').click(function(){
+		$(this).toggleClass('open');
+	});
+});
