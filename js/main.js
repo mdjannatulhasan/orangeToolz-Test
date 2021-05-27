@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     $('.datepicker').datepicker();
     $('select').formSelect();
-    $('.detailsPart').on('scroll', function() {
-        $('#div1').scrollLeft($(this).scrollLeft());
+    $('.resultsShow').on('scroll', function() {
+        $('.titles').scrollLeft($(this).scrollLeft());
       });
 });

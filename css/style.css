@@ -392,8 +392,6 @@ i.right {
 }
 .titles{
     display: flex;
-    width: auto;
-    overflow: scroll;
 }
 .titlePart{
     float: left;
@@ -406,7 +404,8 @@ i.right {
     padding: 15px 0 15px 10px;
     clip-path: polygon(0% 0%, 93% 0%, 100% 50%, 93% 100%, 0% 100%);
 }
-.titlePart:not(:first-child), .titlePart:not(:first-child){
+.titlePart:not(:first-child){
+    min-width:320px;
     margin-left: -18px;
     padding: 15px 0 15px 25px;
     clip-path: polygon(93% 0, 100% 50%, 93% 100%, 0% 100%, 7% 50%, 0% 0%);
@@ -414,7 +413,6 @@ i.right {
 .titlePart:last-child{
     border-radius: 0 10px 10px 0;
     padding: 15px 0 15px 25px;
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 7% 50%, 0% 0%);
 }
 .dealAmount{
     margin-top: 5px;
@@ -439,9 +437,7 @@ i.right {
     right: 25px !important;
     top: 22px;
 }
-.titles::-webkit-scrollbar{
-    display: none;
-}
+
 .details{
     display: flex;
     width: auto;
@@ -454,11 +450,34 @@ i.right {
     min-width: 290px;
     max-width: 290px;
     margin-top: 15px;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 440px;
 }
 .detailsPart:not(:first-child){
     margin-left: 10px;
+}
+.no-content{
+    background: #ffffff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-content .no-deal p{
+    color: #8896A8;
+}
+.no-content .no-deal span{
+    color: #546376;
+
+}
+.no-content .no-deal i{
+    color: #ffffff;
+    background-color: #3C7EF3;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 14px;
 }
 .infoBox{
     margin: 8px 2px;
@@ -466,6 +485,7 @@ i.right {
     border-radius: 10px;
     padding: 10px 20px;
     position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 .boxIcons a i{
     border: 1px solid #E5E8EF;
@@ -509,6 +529,7 @@ i.right {
 }
 .detailsPart::-webkit-scrollbar-track{
     background: rgba(60, 126, 243, 0.1) !important;
+    border-radius: 45px;
 }
 .detailsPart::-webkit-scrollbar-thumb{
     background: #133159 !important;
@@ -543,7 +564,6 @@ i.right {
     border-width: 8px 8px 8px 0;
     border-color: transparent #133159 transparent transparent;
 }
-
 .resultsShow::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
     border-color: transparent #275592 transparent transparent;
 }
@@ -555,4 +575,38 @@ i.right {
 
 .resultsShow::-webkit-scrollbar-button:horizontal:single-button:increment:hover {
     border-color: transparent transparent transparent #275592;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+.single-button a{
+    padding: 8px 82px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+.single-button a i{
+    margin-right: 10px;
+}
+.thumbs i{
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    transform: scaleX(-1);
+}
+.trash a{
+    color: #FF5858;
+    border: 1px solid #FF5858;
+}.thumbs a{
+    color: #FF5858;
+    border: 1px solid #FF5858;
+}.hand a{
+    color: #6FCF97;
+    border: 1px solid #6FCF97;
+}
+.pipe a{
+    color: #FFB053;
+    border: 1px solid #FFB053;
 }
