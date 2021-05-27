@@ -1,4 +1,6 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Copyright Reserved
+    AUTHOR: Shah Muhammad Jannatul Hasan
 ***************************************
                 INDEX
 ***************************************
@@ -9,12 +11,14 @@
             4.1 Design customisation for 
                 expanded and not expanded Mode
             4.2 Design of Logo
+            4.3 Design Side Menu Items
+            4.4 Default active class modification
 
 
 
 
 
-*/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 /***************************************
@@ -153,7 +157,7 @@ expanded and not expanded Mode **************/
     position: unset;
 }
 
-/************ 4.4. Default active class modification **************/
+/************ 4.4. Default .active class modification **************/
 .sidenav li.active{
     background-color:transparent !important;
 }
@@ -178,6 +182,12 @@ expanded and not expanded Mode **************/
     padding-top: 20px;
 }
 
+/***************************************
+            5. Main Body Part
+***************************************/
+
+/* ********** 5.1 Modify div class 'main' and 
+expanded and not expanded mode************ */
 .main{
     width: calc(100% - 89px);
     float: left;
@@ -196,6 +206,7 @@ expanded and not expanded Mode **************/
 .row{
     margin-bottom: 0;
 }
+/* ******** 5.2 Modify Searchbox ********* */
 .searchBox{
     position: relative;
 }
@@ -205,6 +216,8 @@ expanded and not expanded Mode **************/
     z-index: 99;
     top: 7px;
 }
+
+/* Searchbox inset shadow */
 #icon_prefix{
     background: #E5E8EF;
     box-shadow: inset -4px 0px 2px #FFFFFF, inset 4px 4px 2px rgba(8, 20, 36, 0.1) !important;
@@ -221,6 +234,8 @@ expanded and not expanded Mode **************/
     color: #546376;
     font-size: 14px;
 }
+
+/* ********* 5.3 Icons modification ********** */
 .topNavbarIcons{
     position: relative;
     display: flex;
@@ -258,6 +273,8 @@ expanded and not expanded Mode **************/
     font-size: 18px;
     border-radius: 50%;
 }
+
+/* ************ 5.4 Notification Counter ************* */
 .counter{
     background-color: #ff2264;
     color: #ffffff;
@@ -276,6 +293,7 @@ i.right {
     float: right;
     margin-left: 0;
 }
+/*  */
 .dropdownBar{
     position: relative;
 }
