@@ -504,13 +504,13 @@ i.right {
     right: 10px;
     bottom: 10px;
 }
-.detailsPart::-webkit-scrollbar,.details::-webkit-scrollbar {
+.detailsPart::-webkit-scrollbar{
     width: 10px !important;
 }
 .detailsPart::-webkit-scrollbar-track{
     background: rgba(60, 126, 243, 0.1) !important;
 }
-.detailsPart::-webkit-scrollbar-thumb,.details::-webkit-scrollbar-thumb {
+.detailsPart::-webkit-scrollbar-thumb{
     background: #133159 !important;
     border-radius: 45px;
 }
