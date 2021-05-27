@@ -36,4 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
         $('span').removeClass("active");
         $(this).addClass("active");
     });
+    $('.datepicker').datepicker();
+    $('select').formSelect();
+    $('.detailsPart').on('scroll', function() {
+        $('#div1').scrollLeft($(this).scrollLeft());
+      });
 });
