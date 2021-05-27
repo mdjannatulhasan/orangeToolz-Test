@@ -51,6 +51,9 @@
 *{
     font-family: 'Poppins';
 }
+html{
+    background-color: #F5F7F9;
+}
 .sideNavbar{
     background-color: #133159;
     width: 89px;
@@ -141,7 +144,6 @@
 }
 .topNav{
     background: #133159;
-    overflow: hidden;
     padding: 10px 0 13px 0;
 }
 .row{
@@ -174,6 +176,8 @@ input::placeholder{
 }
 .topNavbarIcons{
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 .topNavbarIcons a{
     color: #ffffff;
@@ -186,12 +190,17 @@ input::placeholder{
     padding: 8px;
     font-size: 18px;
     border-radius: 50%;
+    margin-left: 6px;
 }
 .topNavbarIcons .callIcon .material-icons{
     background-color: #68ebca;
 }
 .topNavbarIcons .addIcon .material-icons{
     background-color: #3c7ef3;
+}
+.topNavbarIcons .notificationIcon .material-icons{
+    background-color: #3c7ef3;
+    position: relative;
 }
 .topNavbarIcons .whatIcon .material-icons{
     background-color: #3c7ef3;
@@ -210,9 +219,86 @@ input::placeholder{
     font-size: 6px;
     position: absolute;
     top: 9px;
-    left: 92px;
+    left: 22px;
     z-index: 88;
     border: 1px solid white;
     border-radius: 50%;
     padding: 1px 1px 1px 2px;
+}
+i.right {
+    float: right;
+    margin-left: 0;
+}
+.dropdownBar{
+    position: relative;
+}
+.aaa{
+    position: absolute;
+    display: block;
+    width: 100%;
+    left:10px;
+    top:47px;
+    height: 151px;
+    transform-origin: 0px 0px;
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+    z-index: 11;
+}
+.adminInfo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    align-items: center;
+    color: #ffffff;
+}
+.adminInfo .adminName{
+    font-size: 14px;
+}
+.flexItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dealSection{
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+.fsIcons span{
+    background-color: #F6F7FB;
+    padding: 10px 12px;
+    margin: 1px;
+}
+.fsIcons span:first-child{
+    border-radius: 5px 0 0 5px;
+}
+.fsIcons span:last-child{
+    border-radius:0 5px 5px 0;
+}
+.fsIcons .active{
+    background-color: #133159;
+    color: #ffffff;
+}
+.btn{
+    background-color: #3c7ef3;
+    box-shadow: none;
+    margin-right: 15px;
+    padding: 0 4px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.button-with-icon .material-icons{
+    height: 25px;
+    width: 25px;
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 50%;
+    margin-left: 6px;
+    background: white;
+    color: #3c7ef3;
+}
+.btnName{
+    font-size: 10px;
+    padding: 0 5px 0 8px;
 }

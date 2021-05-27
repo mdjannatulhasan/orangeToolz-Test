@@ -12,12 +12,12 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="https://kit.fontawesome.com/74ffea834f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="sideNavbar expanded" id="sideNavbar">
         <div class="logo">
-            <a href="#!"><img src="images/icons/logo-sm.svg" alt=""><span class="logoTxt nav-link">Pypepro</span></a>
+            <a href="#!"><img src="images/icons/logo-sm.svg" alt="company_logo"><span class="logoTxt nav-link">Pypepro</span></a>
         </div>
         <ul id="slide-out" class="sidenav sidenav-fixed">
             <li class="active"><a href="#!"><i class="material-icons">home</i><span class="nav-link">Dashboard</span></a></li>
@@ -41,7 +41,7 @@
                 <div class="col s5"></div>
                 <div class="col s7">
                     <div class="row">
-                        <div class="col s5">
+                        <div class="col s4">
                             <div class="searchBox">
                                 <div class="inputfield">
                                     <i class="material-icons searchIcon">search</i>
@@ -53,14 +53,69 @@
                             <div class="topNavbarIcons">
                                 <a href="#"><span class="callIcon"><i class="material-icons searchIcon">phone</i></span></a>
                                 <a href="#"><span class="addIcon"><i class="material-icons searchIcon">add</i></span></a>
-                                <a href="#"><span class="addIcon"><span class="material-icons">
-                                    notifications</span></span>
+                                <a href="#"><span class="notificationIcon"><span class="material-icons">
+                                    notifications</span><span class="counter">9</span></span>
                                 </a>
-                                <span class="counter">9</span>
+                                
                                 <a href="#"><span class="whatIcon"><i class="material-icons">help</i></span></a>
                             </div>
                         </div>
-                        <div class="col s3">6-columns</div>
+                        <div class="col s4 dropdownBar">
+                            <ul id="dropdown1" class="dropdown-content">
+                                <li><a href="#!">one</a></li>
+                                <li><a href="#!">two</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">three</a></li>
+                            </ul>
+                            <div>
+                                <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                                    <div class="adminInfo">
+                                        <span><img class="responsive-img" src="images/person-pic.png" alt="adminPic"></span>
+                                        <span><span class="adminName">Admin</span><br>
+                                        admin@gmail.com</span>
+                                        <span><i class="material-icons right">expand_more</i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dealSection">
+            <div class="headBar flexItem">
+                <div class="heading">
+                    Deal
+                </div>
+                <div class="viewIcons flexItem">
+                    <div class="fsIcons">
+                        <span>
+                            <i class="fas fa-list-ul"></i>
+                        </span>
+                        <span>
+                            <i class="fas fa-th"></i>
+                        </span>
+                        <span>
+                            <i class="fas fa-th-large"></i>
+                        </span>
+                        <span>
+                            <i class="far fa-chart-bar"></i>
+                        </span>
+                    </div>
+                    <div class="button-with-icon flexItem">
+                        <span class="create-list flexItem btn">
+                            <span class="material-icons">add</span>
+                            <span class="btnName">Create List</span> 
+                        </span>
+                        <span class="settings flexItem btn">
+                            <span class="material-icons">
+                                settings
+                            </span><span class="btnName">Settings</span>
+                            
+                        </span>
+                        <span class="material-icons hiddenEye">
+                            visibility_off
+                            </span>
                     </div>
                 </div>
             </div>
