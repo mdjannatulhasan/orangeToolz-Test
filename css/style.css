@@ -260,9 +260,16 @@ i.right {
     align-items: center;
 }
 .dealSection{
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 20px;
     background-color: #ffffff;
+}
+.heading{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
 }
 .fsIcons span{
     background-color: #F6F7FB;
@@ -301,4 +308,15 @@ i.right {
 .btnName{
     font-size: 10px;
     padding: 0 5px 0 8px;
+}
+.hiddenEye{
+    height: 35px !important;
+    width: 35px !important;
+    padding: 9px !important;
+    font-size: 16px !important;
+    color: #546376  !important;
+    border: 1px solid #546376;
+}
+.mt-1{
+    margin: 15px 0;
 }
