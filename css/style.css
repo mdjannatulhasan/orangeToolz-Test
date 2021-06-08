@@ -358,6 +358,8 @@ i.right {
     padding: 20px;
     margin: 20px;
     background-color: #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .heading{
     font-family: Poppins;
